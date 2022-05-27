@@ -9,6 +9,10 @@ def hello():
     """Return a friendly HTTP greeting."""
     return 'Hello World'
 
+@app.route('/ONE')
+def hello():
+    """Return a friendly HTTP greeting."""
+    return 'THIS IS FIRST PAGE'
 @app.errorhandler(500)
 def server_error(e):
     logging.exception('An error occurred during a request.')
